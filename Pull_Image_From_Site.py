@@ -4,7 +4,6 @@ import random
 from io import BytesIO
 from PIL import  Image
 
-x = random.randint(1, 100)
 
 class Image_Generation:
 
