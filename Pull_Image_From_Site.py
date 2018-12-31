@@ -4,7 +4,7 @@ import random
 from io import BytesIO
 from PIL import  Image
 
-
+new_images = []
 class Image_Generation:
 
     def get_Images():
@@ -22,8 +22,6 @@ class Image_Generation:
         resp = urllib.request.urlopen(req).read()
         soup = bs.BeautifulSoup(resp, 'lxml')
 
-
-        new_images = []
 
         for each_img in soup.find_all('img'):
             new_images.append("https:" + each_img.get('src'))

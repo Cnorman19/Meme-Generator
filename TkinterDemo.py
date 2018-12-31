@@ -1,5 +1,5 @@
 from tkinter import *
-from Pull_Image_From_Site import *
+from Image_Download import *
 
 class Window(Frame):
 
@@ -21,6 +21,10 @@ class Window(Frame):
         quit_Button = Button(self, text="QUIT", fg = "white" , bg = "pink", command = self.exit)
         quit_Button.place(relx=0.5, rely=0.6, anchor=CENTER)
         quit_Button.config(height = 4, width = 25)
+
+        download_Button = Button(self, text="Download a Generated Meme", fg="white", bg="orange", command = DownloadImage.download)
+        download_Button.place(relx=0.5, rely=0.9, anchor=CENTER)
+        download_Button.config(height=4, width=25)
 
     def exit(self):
         exit()
