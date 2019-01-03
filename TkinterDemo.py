@@ -15,16 +15,16 @@ class Window(Frame):
 
         # buttons creation and configuration
         generate_meme_button = Button(self, text = "Generate Meme", fg = "white" , bg = "purple", command = Image_Generation.get_Images)
-        generate_meme_button.place(relx = 0.5, rely = 0.3, anchor = CENTER)
+        generate_meme_button.place(relx = 0.5, rely = 0.2, anchor = CENTER)
         generate_meme_button.config(height = 4, width = 40)
 
         quit_Button = Button(self, text="QUIT", fg = "white" , bg = "pink", command = self.exit)
-        quit_Button.place(relx=0.5, rely=0.6, anchor=CENTER)
-        quit_Button.config(height = 4, width = 25)
+        quit_Button.place(relx=0.5, rely=0.8, anchor=CENTER)
+        quit_Button.config(height = 4, width = 40)
 
-        download_Button = Button(self, text="Download a Generated Meme", fg="white", bg="orange", command = DownloadImage.download)
-        download_Button.place(relx=0.5, rely=0.9, anchor=CENTER)
-        download_Button.config(height=4, width=25)
+        download_Button = Button(self, text="Download a Generated Meme\n(Must Generate First)", fg="white", bg="orange", command = DownloadImage.download)
+        download_Button.place(relx=0.5, rely=0.5, anchor=CENTER)
+        download_Button.config(height=4, width=40)
 
     def exit(self):
         exit()

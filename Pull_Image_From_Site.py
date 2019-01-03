@@ -1,10 +1,9 @@
 import urllib.request
 import bs4 as bs
-import random
-from io import BytesIO
-from PIL import  Image
 
 new_images = []
+
+
 class Image_Generation:
 
     def get_Images():
